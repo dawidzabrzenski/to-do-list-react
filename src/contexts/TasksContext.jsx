@@ -4,7 +4,14 @@ const TasksContext = createContext();
 
 const initialValue = {
   tasks: [
-    { id: 1, name: "Clean the x" },
+    {
+      id: 1,
+      name: "Clean the x",
+      subtasks: [
+        { id: 3, name: "Go shopping" },
+        { id: 4, name: "Go to the doctor" },
+      ],
+    },
     { id: 2, name: "Clean the y" },
   ],
 };

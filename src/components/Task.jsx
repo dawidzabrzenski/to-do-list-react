@@ -9,9 +9,11 @@ function Task({ index, id, name }) {
     <div className={styles.item}>
       <p className={styles.task}>{index}.</p>
       <p className={styles.task}>{name}</p>
-      <button className={styles.deleteButton} onClick={() => RemoveTask(id)}>
-        ❌
-      </button>
+      <div>
+        <button className={styles.deleteButton} onClick={() => RemoveTask(id)}>
+          ❌
+        </button>
+      </div>
     </div>
   );
 }
